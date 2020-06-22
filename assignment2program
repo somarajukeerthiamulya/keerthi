@@ -1,0 +1,209 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled9.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOUL0Ne/GmyILILOxXhVP+f",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/assignment2program\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xZs86Ba26Nb7",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 129
+        },
+        "outputId": "f9c29f60-4789-4008-ce9f-86a183f8bcd0"
+      },
+      "source": [
+        "# Finds if a and b are same. \n",
+        "def areSame(a, b): \n",
+        "   if (a ^ b):  \n",
+        "       print \"Not Same\"\n",
+        "   else: \n",
+        "       print \"Same\"\n",
+        "    \n",
+        "# Driver code \n",
+        "areSame(10, 20) "
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-1-58e10201fd4f>\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    print \"Not Same\"\u001b[0m\n\u001b[0m                   ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m Missing parentheses in call to 'print'. Did you mean print(\"Not Same\")?\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hqBWQofI6R0W",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "524b1ff5-b0f2-47ee-cede-2f373f2aea0a"
+      },
+      "source": [
+        "# This program adds two numbers\n",
+        "\n",
+        "num1 = 1.5\n",
+        "num2 = 6.3\n",
+        "\n",
+        "# Add two numbers\n",
+        "sum = num1 + num2\n",
+        "\n",
+        "# Display the sum\n",
+        "print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The sum of 1.5 and 6.3 is 7.8\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "J7qfihW162jS",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "853802c9-7435-4f81-dc61-2b5f11071639"
+      },
+      "source": [
+        "# Python Program to calculate the square root\n",
+        "\n",
+        "# Note: change this value for a different result\n",
+        "num = 8 \n",
+        "\n",
+        "# To take the input from the user\n",
+        "#num = float(input('Enter a number: '))\n",
+        "\n",
+        "num_sqrt = num ** 0.5\n",
+        "print('The square root of %0.3f is %0.3f'%(num ,num_sqrt))"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The square root of 8.000 is 2.828\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lLKrUgMa7P3n",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "28d4a71f-2cc4-4264-f09d-39ed73597006"
+      },
+      "source": [
+        "# Three sides of the triangle is a, b and c:  \n",
+        "a = float(input('Enter first side: '))  \n",
+        "b = float(input('Enter second side: '))  \n",
+        "c = float(input('Enter third side: '))  \n",
+        "  \n",
+        "# calculate the semi-perimeter  \n",
+        "s = (a + b + c) / 2  \n",
+        "  \n",
+        "# calculate the area  \n",
+        "area = (s*(s-a)*(s-b)*(s-c)) ** 0.5  \n",
+        "print('The area of the triangle is %0.2f' %area)   "
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter first side: 10\n",
+            "Enter second side: 8\n",
+            "Enter third side: 5\n",
+            "The area of the triangle is 19.81\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-TI5hhra7aZT",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "1da3a5c5-fe48-49e8-e277-eaa39c8ad7aa"
+      },
+      "source": [
+        "# Solve the quadratic equation ax**2 + bx + c = 0\n",
+        "\n",
+        "# import complex math module\n",
+        "import cmath\n",
+        "\n",
+        "a = 1\n",
+        "b = 5\n",
+        "c = 6\n",
+        "\n",
+        "# calculate the discriminant\n",
+        "d = (b**2) - (4*a*c)\n",
+        "\n",
+        "# find two solutions\n",
+        "sol1 = (-b-cmath.sqrt(d))/(2*a)\n",
+        "sol2 = (-b+cmath.sqrt(d))/(2*a)\n",
+        "\n",
+        "print('The solution are {0} and {1}'.format(sol1,sol2))"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The solution are (-3+0j) and (-2+0j)\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
