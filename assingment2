@@ -1,0 +1,219 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMHGORNJdDDaxXuHBM9H1t+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/assingment2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "APXKw_qlAn9e",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "42e2a848-a719-4530-cfb4-20e16e1a1c0c"
+      },
+      "source": [
+        "a = int(input(\"enter first number: \"))\n",
+        "b = int(input(\"enter second number: \"))\n",
+        " \n",
+        "sum = a + b\n",
+        " \n",
+        "print(\"sum:\", sum)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "enter first number: 10\n",
+            "enter second number: 5\n",
+            "sum: 15\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "5PKMNFaxB5_3",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "53362c13-9551-4d71-d780-06cde19ea263"
+      },
+      "source": [
+        "name = input('Enter your name:')\n",
+        "print ('Hello'), name\n"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter your name:chuck\n",
+            "Hello\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(None, 'chuck')"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Xd7QtoyJB_Db",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "13a5f449-9ab8-4c91-cabb-8496911d2a87"
+      },
+      "source": [
+        "hours = float(input('Enter Hours:'))\n",
+        "rate = float(input('Enter Rate:'))\n",
+        "pay = hours * rate\n",
+        "print ('Pay ='), pay"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Hours:35\n",
+            "Enter Rate:2.75\n",
+            "Pay =\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(None, 96.25)"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "D8D0NptOCJLh",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# width = 17\n",
+        "# height = 12.0\n",
+        "#\n",
+        "# For each of the following expressions, write the value of the expression and\n",
+        "# the type (of the value of the expression).\n",
+        "#\n",
+        "#   1. width / 2\n",
+        "#   2. width / 2.0\n",
+        "#   3. height / 3\n",
+        "#   4. 1 + 2 * 5\n",
+        "#\n",
+        "# Use Python interpreter to check your answers.\n",
+        "#\n",
+        "\n",
+        "width = 17\n",
+        "height = 12.0\n",
+        "\n",
+        "print type(width / 2)    # <type 'int'>\n",
+        "print type(width / 2.0)  # <type 'float'>\n",
+        "print type(height / 3)   # <type 'float'>\n",
+        "print type(1 + 2 * 5)    # <type 'int'>\n"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CadpHDXuESu3",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "8114bf83-bc2d-4649-95ed-804d9a640969"
+      },
+      "source": [
+        "# Python Program to convert temperature in celsius to fahrenheit\n",
+        "\n",
+        "# change this value for a different result\n",
+        "celsius = 37.5\n",
+        "\n",
+        "# calculate fahrenheit\n",
+        "fahrenheit = (celsius * 1.8) + 32\n",
+        "print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "37.5 degree Celsius is equal to 99.5 degree Fahrenheit\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "UV-IXS0ZBFto",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 7,
+      "outputs": []
+    }
+  ]
+}
