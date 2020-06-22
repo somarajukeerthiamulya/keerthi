@@ -5,7 +5,6 @@
     "colab": {
       "name": "Untitled5.ipynb",
       "provenance": [],
-      "authorship_tag": "ABX9TyM/CgRgOKLm53yv8MQfyXkz",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -40,11 +39,11 @@
         "radius = float(input(' Please Enter the radius of a circle: '))\n",
         "area = PI * radius * radius\n",
         "circumference = 2 * PI * radius\n",
-        "\n",
+        " \n",
         "print(\" Area Of a Circle = %.2f\" %area)\n",
         "print(\" Circumference Of a Circle = %.2f\" %circumference)"
       ],
-      "execution_count": 1,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -70,20 +69,20 @@
       },
       "source": [
         "# Python Program to find Area of a Rectangle\n",
-        "\n",
+        " \n",
         "width = float(input('Please Enter the Width of a Rectangle: '))\n",
         "height = float(input('Please Enter the Height of a Rectangle: '))\n",
-        "\n",
+        " \n",
         "# calculate the area\n",
         "Area = width * height\n",
-        "\n",
+        " \n",
         "# calculate the Perimeter\n",
         "Perimeter = 2 * (width + height)\n",
-        "\n",
+        " \n",
         "print(\"\\n Area of a Rectangle is: %.2f\" %Area)\n",
         "print(\" Perimeter of Rectangle is: %.2f\" %Perimeter)"
       ],
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -121,7 +120,7 @@
         "area = (s*(s-a)*(s-b)*(s-c)) ** 0.5  \n",
         "print('The area of the triangle is %0.2f' %area)  "
       ],
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -156,7 +155,7 @@
         "    circumference = 2*3.14*radius;\n",
         "    print(\"\\nCircumference of Circle =\",circumference);"
       ],
-      "execution_count": 9,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -191,7 +190,7 @@
         "fahrenheit = (celsius * 1.8) + 32\n",
         "print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))"
       ],
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -223,7 +222,7 @@
         "    perimeter = 4*slength;\n",
         "    print(\"\\nPerimeter of Square:\", perimeter);"
       ],
-      "execution_count": 11,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -269,7 +268,7 @@
         "print(num_1 / num_2)\n",
         "# The format() will help out output look descent and formatted."
       ],
-      "execution_count": 13,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -309,7 +308,7 @@
         "\n",
         "print(\"Simple Interest = %.2f\" %simple_interest)"
       ],
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -352,7 +351,7 @@
         "print('The value of x after swapping: {}'.format(x))\n",
         "print('The value of y after swapping: {}'.format(y))"
       ],
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
