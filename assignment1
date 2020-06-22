@@ -1,0 +1,368 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/CgRgOKLm53yv8MQfyXkz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/assignment1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AaownClBV9XI",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "679088fa-bc67-4143-9be3-a18f9d6c26c2"
+      },
+      "source": [
+        "PI = 3.14\n",
+        "radius = float(input(' Please Enter the radius of a circle: '))\n",
+        "area = PI * radius * radius\n",
+        "circumference = 2 * PI * radius\n",
+        "\n",
+        "print(\" Area Of a Circle = %.2f\" %area)\n",
+        "print(\" Circumference Of a Circle = %.2f\" %circumference)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            " Please Enter the radius of a circle: 10\n",
+            " Area Of a Circle = 314.00\n",
+            " Circumference Of a Circle = 62.80\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "17tITZfMYOdg",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 102
+        },
+        "outputId": "e8e23638-a490-4493-e3e7-edb56e7d25ad"
+      },
+      "source": [
+        "# Python Program to find Area of a Rectangle\n",
+        "\n",
+        "width = float(input('Please Enter the Width of a Rectangle: '))\n",
+        "height = float(input('Please Enter the Height of a Rectangle: '))\n",
+        "\n",
+        "# calculate the area\n",
+        "Area = width * height\n",
+        "\n",
+        "# calculate the Perimeter\n",
+        "Perimeter = 2 * (width + height)\n",
+        "\n",
+        "print(\"\\n Area of a Rectangle is: %.2f\" %Area)\n",
+        "print(\" Perimeter of Rectangle is: %.2f\" %Perimeter)"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Please Enter the Width of a Rectangle: 10\n",
+            "Please Enter the Height of a Rectangle: 5\n",
+            "\n",
+            " Area of a Rectangle is: 50.00\n",
+            " Perimeter of Rectangle is: 30.00\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YfkynxQkZYFI",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "81febb78-1ae1-41aa-e083-06720fd8e9ea"
+      },
+      "source": [
+        "a = float(input('Enter first side: '))  \n",
+        "b = float(input('Enter second side: '))  \n",
+        "c = float(input('Enter third side: '))  \n",
+        "  \n",
+        "# calculate the semi-perimeter  \n",
+        "s = (a + b + c) / 2  \n",
+        "  \n",
+        "# calculate the area  \n",
+        "area = (s*(s-a)*(s-b)*(s-c)) ** 0.5  \n",
+        "print('The area of the triangle is %0.2f' %area)  "
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter first side: 8\n",
+            "Enter second side: 6\n",
+            "Enter third side: 4\n",
+            "The area of the triangle is 11.62\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RdYV4nx1ZmW4",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "4309b777-927d-448f-ec1b-288196fca995"
+      },
+      "source": [
+        "print(\"Enter 'x' for exit.\");\n",
+        "rad = input(\"Enter radius of circle: \");\n",
+        "if rad == 'x':\n",
+        "    exit();\n",
+        "else:\n",
+        "    radius = float(rad);\n",
+        "    circumference = 2*3.14*radius;\n",
+        "    print(\"\\nCircumference of Circle =\",circumference);"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter 'x' for exit.\n",
+            "Enter radius of circle: 15\n",
+            "\n",
+            "Circumference of Circle = 94.2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "9f38tBOXaASg",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "29b75846-a132-482a-b4d4-5c658214eb56"
+      },
+      "source": [
+        "# Python Program to convert temperature in celsius to fahrenheit\n",
+        "\n",
+        "# change this value for a different result\n",
+        "celsius = 37.5\n",
+        "\n",
+        "# calculate fahrenheit\n",
+        "fahrenheit = (celsius * 1.8) + 32\n",
+        "print('%0.1f degree Celsius is equal to %0.1f degree Fahrenheit' %(celsius,fahrenheit))"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "37.5 degree Celsius is equal to 99.5 degree Fahrenheit\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_XtA4dEzaKxW",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "cf0f1951-ffc4-49dc-d3b9-06a247a00cf0"
+      },
+      "source": [
+        "print(\"Enter 'x' for exit.\");\n",
+        "side = input(\"Enter side length of square: \");\n",
+        "if side == 'x':\n",
+        "    exit();\n",
+        "else:\n",
+        "    slength = int(side);\n",
+        "    perimeter = 4*slength;\n",
+        "    print(\"\\nPerimeter of Square:\", perimeter);"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter 'x' for exit.\n",
+            "Enter side length of square: 64\n",
+            "\n",
+            "Perimeter of Square: 256\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kNZfgwA_avft",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 187
+        },
+        "outputId": "77925fa1-2fc2-4c98-e70d-f81a83d760b0"
+      },
+      "source": [
+        "num_1 = int(input('Enter your first number: '))\n",
+        "num_2 = int(input('Enter your second number: '))\n",
+        " \n",
+        "# Addition\n",
+        "print('{} + {} = '.format(num_1, num_2))\n",
+        "print(num_1 + num_2)\n",
+        " \n",
+        "# Subtraction\n",
+        "print('{} - {} = '.format(num_1, num_2))\n",
+        "print(num_1 - num_2)\n",
+        " \n",
+        "# Multiplication\n",
+        "print('{} * {} = '.format(num_1, num_2))\n",
+        "print(num_1 * num_2)\n",
+        " \n",
+        "# Division\n",
+        "print('{} / {} = '.format(num_1, num_2))\n",
+        "print(num_1 / num_2)\n",
+        "# The format() will help out output look descent and formatted."
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter your first number: 5\n",
+            "Enter your second number: 10\n",
+            "5 + 10 = \n",
+            "15\n",
+            "5 - 10 = \n",
+            "-5\n",
+            "5 * 10 = \n",
+            "50\n",
+            "5 / 10 = \n",
+            "0.5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "anCAuW2ibPu6",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "832a0609-3fa9-468a-9270-ea002a8f8807"
+      },
+      "source": [
+        "p = float(input(\"Enter the principal amount: \"))\n",
+        "t = float(input(\"Enter the time in years: \"))\n",
+        "r = float(input(\"Enter the interest rate: \"))\n",
+        "\n",
+        "simple_interest = p * t * r / 100\n",
+        "\n",
+        "print(\"Simple Interest = %.2f\" %simple_interest)"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the principal amount: 500\n",
+            "Enter the time in years: 5\n",
+            "Enter the interest rate: 8\n",
+            "Simple Interest = 200.00\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "e4S4I7zJdHGl",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "2af9931f-7261-4c99-e425-5dd4e77ab1e1"
+      },
+      "source": [
+        "# Python program to swap two variables\n",
+        "\n",
+        "x = 5\n",
+        "y = 10\n",
+        "\n",
+        "# To take inputs from the user\n",
+        "#x = input('Enter value of x: ')\n",
+        "#y = input('Enter value of y: ')\n",
+        "\n",
+        "# create a temporary variable and swap the values\n",
+        "temp = x\n",
+        "x = y\n",
+        "y = temp\n",
+        "\n",
+        "print('The value of x after swapping: {}'.format(x))\n",
+        "print('The value of y after swapping: {}'.format(y))"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The value of x after swapping: 10\n",
+            "The value of y after swapping: 5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
