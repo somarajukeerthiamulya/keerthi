@@ -1,0 +1,188 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled12.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMCC94yFcCUAoGS7m7OHYLW",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/assignment%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t0e9yA9c6ODP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "78360993-c27d-4870-ce22-bdccbc6018df"
+      },
+      "source": [
+        " \n",
+        "def char_frequency(str1):\n",
+        "    dict = {}\n",
+        "    for n in str1:\n",
+        "        keys = dict.keys()\n",
+        "        if n in keys:\n",
+        "            dict[n] += 1\n",
+        "        else:\n",
+        "            dict[n] = 1\n",
+        "    return dict\n",
+        "print(char_frequency('google.com'))"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "yIJRsYvJ6QCO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "4af7231f-25f6-4387-f205-f6ab9d1c81d4"
+      },
+      "source": [
+        " def change_char(str1):\n",
+        "  char = str1[0]\n",
+        "  str1 = str1.replace(char, '$')\n",
+        "  str1 = char + str1[1:]\n",
+        " \n",
+        "  return str1\n",
+        " \n",
+        "print(change_char('restart'))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "resta$t\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "I0OraY267ThV",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "82ca8359-fc97-488a-91bf-bf4a244e5214"
+      },
+      "source": [
+        " def find_longest_word(words_list):\n",
+        "    word_len = []\n",
+        "    for n in words_list:\n",
+        "        word_len.append((len(n), n))\n",
+        "    word_len.sort()\n",
+        "    return word_len[-1][1]\n",
+        " \n",
+        "print(find_longest_word([\"PHP\", \"Exercises\", \"Backend\"]))"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Exercises\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dz09DtA07k-a",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "69877c0c-09b6-439d-d42b-b016e54c92be"
+      },
+      "source": [
+        " def remove_char(str, n):\n",
+        "      first_part = str[:n] \n",
+        "      last_part = str[n+1:]\n",
+        "      return first_part + last_part\n",
+        "print(remove_char('Python', 0))\n",
+        "print(remove_char('Python', 3))"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "ython\n",
+            "Pyton\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "udBD5H-S74SG",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "1813690c-1c2c-4487-e3ae-8f44bd5eb37b"
+      },
+      "source": [
+        " def chars_mix_up(a, b):\n",
+        "  new_a = b[:2] + a[2:]\n",
+        "  new_b = a[:2] + b[2:]\n",
+        " \n",
+        "  return new_a + ' ' + new_b\n",
+        "print(chars_mix_up('abc', 'xyz'))"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "xyc abz\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
