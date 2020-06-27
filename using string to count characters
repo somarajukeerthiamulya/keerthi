@@ -1,0 +1,63 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPk7JiBMN59MRRMgfL10F6Q",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/using%20string%20to%20count%20characters\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "K_z0iuLniYF5",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "80a60965-8b33-4295-d790-c6a22075e2bb"
+      },
+      "source": [
+        " def char_frequency(str1):\n",
+        "    dict = {}\n",
+        "    for n in str1:\n",
+        "        keys = dict.keys()\n",
+        "        if n in keys:\n",
+        "            dict[n] += 1\n",
+        "        else:\n",
+        "            dict[n] = 1\n",
+        "    return dict\n",
+        "print(char_frequency('google.com'))"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'g': 2, 'o': 3, 'l': 1, 'e': 1, '.': 1, 'c': 1, 'm': 1}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
