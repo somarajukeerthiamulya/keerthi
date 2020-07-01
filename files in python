@@ -1,0 +1,179 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled15.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyO2N2uZj3cO2N5GeuvvVssv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/files%20in%20python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XBBs03DOx-HO",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        " \n",
+        "# Python code to illustrate \n",
+        "# working of try()  \n",
+        " \n",
+        "def divide(x, y): \n",
+        " \n",
+        "    try: \n",
+        " \n",
+        "        # Floor Division : Gives only Fractional Part as Answer \n",
+        " \n",
+        "        result = x // y \n",
+        " \n",
+        "        print(\"Yeah ! Your answer is :\", result) \n",
+        " \n",
+        "    except ZeroDivisionError: \n",
+        " \n",
+        "        print(\"Sorry ! You are dividing by zero \")"
+      ],
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "A3zS-h3qyO4s",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "9583405f-43d9-473a-aab9-01be067edb2c"
+      },
+      "source": [
+        " \n",
+        "str = \"This is a test\"\n",
+        "print(str.split())"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['This', 'is', 'a', 'test']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "OerUhG2sy3V2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 149
+        },
+        "outputId": "8b6214bc-91a0-4d1b-e38a-486068e6183d"
+      },
+      "source": [
+        " try:\n",
+        "    # Further file processing goes here\n",
+        "finally:\n",
+        "    reader.close()"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "IndentationError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-3-795ff5c11d85>\"\u001b[0;36m, line \u001b[0;32m3\u001b[0m\n\u001b[0;31m    finally:\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m expected an indented block\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wfurDrmbzLn7",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "6715b822-ed11-4b95-bd10-c982dce9cb6a"
+      },
+      "source": [
+        " >>> import os\n",
+        " \n",
+        ">>> os.getcwd()\n",
+        "'C:\\\\Program Files\\\\PyScripter'\n",
+        " \n",
+        ">>> os.getcwdb()\n",
+        "b'C:\\\\Program Files\\\\PyScripter'"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "b'C:\\\\Program Files\\\\PyScripter'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ovULcaVwzWmD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "315a1a0a-303c-4bd6-a070-3363b77ca70f"
+      },
+      "source": [
+        " my_list = ['p','r','o','b','e']\n",
+        " \n",
+        "print(my_list[-1])\n",
+        " \n",
+        "print(my_list[-5])"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "e\n",
+            "p\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
