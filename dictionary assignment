@@ -1,0 +1,199 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOmpi5ZuMGCJAShH/5JJZP3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/dictionary%20assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "k4tdOL5E7BpM",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "c4c5b063-86dc-4109-b734-6f87191351eb"
+      },
+      "source": [
+        " my_dict = {'data1':100,'data2':-54,'data3':247}\n",
+        "print(sum(my_dict.values()))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "293\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1jO-YvYn7OwN",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "532892ce-7d93-46e3-ea64-a8e47249fac2"
+      },
+      "source": [
+        " \n",
+        "# Creating a Nested Dictionary  \n",
+        "# as shown in the below image \n",
+        " \n",
+        "Dict = {1: 'Geeks', 2: 'For',  \n",
+        " \n",
+        "        3:{'A' : 'Welcome', 'B' : 'To', 'C' : 'Geeks'}} \n",
+        " \n",
+        "  \n",
+        " \n",
+        "print(Dict)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{1: 'Geeks', 2: 'For', 3: {'A': 'Welcome', 'B': 'To', 'C': 'Geeks'}}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pMHdcRpS7gSm",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        " # merging two dictionaries, retaining the greatest value among\n",
+        "# common keys\n",
+        ">>> dict1 = {'bananas': 7, 'apples': 3, 'pears': 14}\n",
+        ">>> dict2 = {'bananas': 3, 'apples': 6, 'grapes': 9}\n",
+        ">>> merge_max_mappings(dict1, dict2)\n",
+        "{'bananas': 7, 'apples': 6, 'pears': 14, 'grapes': 9}"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "58lc5vqj8QMR",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "a9e37fbe-cf21-450a-e8d6-46bcc661b751"
+      },
+      "source": [
+        " \n",
+        "dict = {'key1':'geeks', 'key2':'for'} \n",
+        " \n",
+        "  \n",
+        "# using __setitem__ method \n",
+        " \n",
+        "dict.__setitem__('newkey2', 'GEEK') \n",
+        " \n",
+        "print(dict)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'key1': 'geeks', 'key2': 'for', 'newkey2': 'GEEK'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dSbdc1Pd8r4t",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "e4135a11-a220-4a31-8a70-ef19beaaf618"
+      },
+      "source": [
+        " myDict = {'a':1,'b':2,'c':3,'d':4}\n",
+        "print(myDict)\n",
+        "if 'a' in myDict: \n",
+        "    del myDict['a']\n",
+        "print(myDict)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'a': 1, 'b': 2, 'c': 3, 'd': 4}\n",
+            "{'b': 2, 'c': 3, 'd': 4}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tARdF_xA8cqo",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 149
+        },
+        "outputId": "872a33b9-96c3-4e0a-cab1-90b854ed6a17"
+      },
+      "source": [
+        " #!/usr/bin/python\n",
+        " \n",
+        "dict = {'Name': 'Zara', 'Age': 7};\n",
+        "print \"Length : %d\" % len (dict)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-5-739625cdd305>\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    print \"Length : %d\" % len (dict)\u001b[0m\n\u001b[0m                      ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
