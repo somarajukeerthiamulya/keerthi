@@ -1,0 +1,179 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled20.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNRi7YypY2zTdRwh13gDRIJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/somarajukeerthiamulya/keerthi/blob/master/tuple%20assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LTxs4PDiX1Yu",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "da11ffd9-e03f-452d-b596-ba3164bfdd34"
+      },
+      "source": [
+        " dic = {'1':['a','b'], '2':['c','d']}   \n",
+        "for x ,y in dic.values():\n",
+        "    print(x,y)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "a b\n",
+            "c d\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "GUjC8NeFX346",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "71f72086-a662-4092-8acf-0f5f72497fe7"
+      },
+      "source": [
+        " from collections import defaultdict, Counter\n",
+        "str1 = 'w3resource' \n",
+        "my_dict = {}\n",
+        "for letter in str1:\n",
+        "    my_dict[letter] = my_dict.get(letter, 0) + 1\n",
+        "print(my_dict)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{'w': 1, '3': 1, 'r': 2, 'e': 2, 's': 1, 'o': 1, 'u': 1, 'c': 1}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mIYk0lK_YQTE",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2a2db662-ae83-4610-aaa1-c92cb93a400c"
+      },
+      "source": [
+        " tup = ('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's')\n",
+        "str =  ''.join(tup)\n",
+        "print(str)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "exercises\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "uHRVYKhqYimu",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "baee7527-5502-4444-fbfe-0429d8949418"
+      },
+      "source": [
+        " my_tuple = 3, 4.6, \"dog\"\n",
+        "print(my_tuple)\n",
+        " \n",
+        "# tuple unpacking is also possible\n",
+        "a, b, c = my_tuple\n",
+        " \n",
+        "print(a)      # 3\n",
+        "print(b)      # 4.6\n",
+        "print(c)      # dog"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(3, 4.6, 'dog')\n",
+            "3\n",
+            "4.6\n",
+            "dog\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sDODrOgXY2TV",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "40ed9964-b05d-414e-ede5-7a625bd08227"
+      },
+      "source": [
+        " #create a tuple\n",
+        "tuplex = tuple(\"w3resource\")\n",
+        "print(tuplex)\n",
+        "#use the len() function to known the length of tuple\n",
+        "print(len(tuplex))"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "('w', '3', 'r', 'e', 's', 'o', 'u', 'r', 'c', 'e')\n",
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
